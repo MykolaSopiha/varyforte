@@ -1,0 +1,92 @@
+.pics
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	margin-top: 20px
+	margin-bottom: 20px
+	&__product
+		flex-basis: 155px
+	&__signs
+		flex-basis: 155px
+	+r(360)
+		margin-top: 5px
+		margin-bottom: 5px
+
+.varyforte, .guarantee, .natural
+	margin: 0 auto
+
+.varyforte
+	background: url('../img/img.png') no-repeat 0 -2px
+	width: 124px
+	height: 318px
+
+.guarantee
+	background: url('../img/img.png') no-repeat -181px 0
+	width: 161px
+	height: 149px
+
+.natural
+	background: url('../img/img.png') no-repeat -187px -174px
+	width: 155px
+	height: 148px
+
+.banner
+	margin-top: 20px
+	margin-bottom: 20px
+	padding: 10px
+	background-color: rgba(51, 67, 41, 0.8)
+	font-family: 'Acme', sans-serif
+	font-weight: normal
+	text-align: center
+	&__txt
+		font-size: 48px
+		color: #fff
+		&--desc
+			font-size: 28px
+			color: #fcf49e
+	+r(414)
+		margin-top: 15px
+		margin-bottom: 15px
+		&__txt
+			font-size: 38px
+			&--desc
+				font-size: 20px
+	+r(375)
+		margin-top: 10px
+		margin-bottom: 10px
+		&__txt
+			font-size: 30px
+			&--desc
+				font-size: 18px
+	+r(360)
+		margin-top: 5px
+		margin-bottom: 5px
+		&__txt
+			font-size: 24px
+			&--desc
+				font-size: 14px
+
+.ask-btn
+	display: block
+	margin: 50px auto
+	width: 300px
+	height: 80px
+	border: 6px solid #34442a
+	border-radius: 12px
+	background-clip: padding-box
+	background-color: #fcf49e
+	font-family: "Acme", sans-serif
+	font-size: 48px
+	font-weight: normal
+	color: #34442a
+	line-height: 68px
+	text-align: center
+	text-decoration: none
+	&:hover
+		background-color: rgba(52, 68, 42, 0.3)
+	+r(414)
+		margin: 0 auto
+		font-size: 36px
+		height: 72px
+		line-height: 60px
+
