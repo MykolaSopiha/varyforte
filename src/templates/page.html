@@ -1,12 +1,13 @@
 ---
-title: Index page
+title: Varyforte
+lang: "es"
 ---
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
 
 <!-- begin header -->
-<section class="header">
+<header class="header" role="banner">
 
 	<div class="pics">
 		<div class="pics__product">
@@ -20,14 +21,14 @@ title: Index page
 	</div>
 
 	<div class="banner">
-		<p class="banner__txt">Fórmula exclusiva</p>
-		<p class="banner__txt banner__txt--desc">Para la salud y belleza de tus piernas</p>
-		<p class="banner__txt">¡ADIÓS VARICES!</p>
+		<p class="banner__txt banner__txt--big">Fórmula exclusiva</p>
+		<p class="banner__txt">Para la salud y belleza de tus piernas</p>
+		<p class="banner__txt banner__txt--big">¡ADIÓS VARICES!</p>
 	</div>
 
 	<a href="#" class="ask-btn">Pidela ahora</a>
 
-</section>
+</header>
 <!-- end header -->
 
 
@@ -35,37 +36,41 @@ title: Index page
 <section class="decsription">
 
 	<div class="banner">
-		<p class="banner__txt banner__txt--desc">¡Salud y ligereza en las piernas con la crema Varyforte!</p>
+		<p class="banner__txt">¡Salud y ligereza en las piernas con la crema Varyforte!</p>
 	</div>
 
 	<!-- begin slider -->
 	<div class="slider slick-carousel">
-		<div class="slides">
-			<div class="slide">
-				<div class="slide__pic slide__pic--desc1"></div>
-				<p class="slide__txt">Hidrata  y nutre la piel</p>
+		<div class="slider__items">
+			<div class="sl">
+				<div class="sl__pic sl__pic--water"></div>
+				<p class="sl__txt">Hidrata<br> y nutre la piel</p>
 			</div>
-			<div class="slide">
-				<div class="slide__pic slide__pic--desc2"></div>
-				<p class="slide__txt">Elimina rápidamente  las señales de fatiga en las piernas</p>
+			<div class="sl">
+				<div class="sl__pic sl__pic--foot"></div>
+				<p class="sl__txt">Elimina rápidamente  las señales de fatiga en las piernas</p>
 			</div>
-			<div class="slide">
-				<div class="slide__pic slide__pic--desc3"></div>
-				<p class="slide__txt">Estimula la circulación  normal de la sangre</p>
+			<div class="sl">
+				<div class="sl__pic sl__pic--blood"></div>
+				<p class="sl__txt">Estimula la circulación  normal de la sangre</p>
 			</div>
-			<div class="slide">
-				<div class="slide__pic slide__pic--desc4"></div>
-				<p class="slide__txt">Gran remedio para  la prevención y el tratamiento  de las varic</p>
+			<div class="sl">
+				<div class="sl__pic sl__pic--shield"></div>
+				<p class="sl__txt">Gran remedio para  la prevención y el tratamiento  de las varic</p>
 			</div>
 		</div>
-		<div class="arrow-prev">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 404.3 404.3"><polygon points="289.9 18 265.9 0 114.3 202.1 265.9 404.3 289.9 386.3 151.8 202.1 "/></svg>
+		<div class="slider__arrow slider__arrow--prev">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.6 404.3"><polygon points="175.6 18 151.6 0 0 202.1 151.6 404.3 175.6 386.3 37.5 202.1 "/></svg>
 		</div>
-		<div class="arrow-next">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 404.3 404.3"><polygon points="138.3 0 114.3 18 252.4 202.1 114.3 386.3 138.3 404.3 289.9 202.1 "/></svg>
+		<div class="slider__arrow slider__arrow--next">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.6 404.3"><polygon points="24 0 0 18 138.1 202.1 0 386.3 24 404.3 175.6 202.1 "/></svg>
 		</div>
 	</div>
 	<!-- end slider -->
+
+	<div class="banner">
+		<p class="banner__txt">El poder de la crema "Vary Forte" está en su composición exclusiva, que se ha consolidado como la más necesaria para el tratamiento efectivo de las varices. Además, aporta belleza y salud a la piel de las piernas.</p>
+	</div>
 
 </section>
 <!-- end decsription -->
@@ -76,75 +81,171 @@ title: Index page
 
 	<!-- begin slider -->
 	<div class="slider slick-carousel">
-		<div class="slides">
-			<div class="slide">
-				<div class="slide__pic slide__pic--1"></div>
-				<div class="slide__txt">
-					<p>Troxerutina</p>
-					<ul>
-						<li>alivia la sensación de pesadez y fatiga en las piernas</li>
-						<li>reduce la permeabilidad y la fragilidad de los capilares</li>
-						<li>alivia el hinchazón y la inflamación</li>
-					</ul>
+		<div class="slider__items">
+			<div class="sl sl--card">
+				<div class="sl__card">
+					<div class="sl__icon sl__icon--pills"></div>
+					<div class="sl__txt">
+						<h3>Troxerutina</h3>
+						<ul>
+							<li><p>alivia la sensación de pesadez y fatiga en las piernas</p></li>
+							<li>reduce la permeabilidad y la fragilidad de los capilares</li>
+							<li>alivia el hinchazón y la inflamación</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-			<div class="slide">
-				<div class="slide__pic slide__pic--2"></div>
-				<div class="slide__txt">
-					<p>Castaño de Indias y hojas de abedul</p>
-					<ul>
-						<li>aportan firmeza y elasticidad a los vasos sanguíneos</li>
-						<li>eliminan las microimperfecciones de la piel</li>
-						<li>eliminan las microimperfecciones de la piel</li>
-					</ul>
+			<div class="sl sl--card">
+				<div class="sl__card">
+					<div class="sl__icon sl__icon--chestnut"></div>
+					<div class="sl__txt">
+						<h3>Castaño de Indias y hojas de abedul</h3>
+						<ul>
+							<li>aportan firmeza y elasticidad a los vasos sanguíneos</li>
+							<li>eliminan las microimperfecciones de la piel</li>
+							<li>eliminan las microimperfecciones de la piel</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-			<div class="slide">
-				<div class="slide__pic slide__pic--3"></div>
-				<div class="slide__txt">
-					<p>Aceites esenciales de  limón, soja  y coco</p>
-					<ul>
-						<li>eliminan el mal olor y reducen el exceso de sudor</li>
-						<li>alivian el sentimiento de sequedad y tirantez</li>
-						<li>hidratan profundamente y nutren la piel de las piernas</li>
-					</ul>
+			<div class="sl sl--card">
+				<div class="sl__card">
+					<div class="sl__icon sl__icon--lemon"></div>
+					<div class="sl__txt">
+						<h3>Aceites esenciales de  limón, soja  y coco</h3>
+						<ul>
+							<li>eliminan el mal olor y reducen el exceso de sudor</li>
+							<li>alivian el sentimiento de sequedad y tirantez</li>
+							<li>hidratan profundamente y nutren la piel de las piernas</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-			<div class="slide">
-				<div class="slide__pic slide__pic--4"></div>
-				<div class="slide__txt">
-					<p>Absenta, mentol,  camomila y ortiga</p>
-					<ul>
-						<li>dan ligereza a las piernas y proporcionan energía</li>
-						<li>refrescan y desinfectan la piel de tus piernas</li>
-						<li>aceleran la curación de microfracturas</li>
-					</ul>
+			<div class="sl sl--card">
+				<div class="sl__card">
+					<div class="sl__icon sl__icon--flowers"></div>
+					<div class="sl__txt">
+						<h3>Absenta, mentol,  camomila y ortiga</h3>
+						<ul>
+							<li>dan ligereza a las piernas y proporcionan energía</li>
+							<li>refrescan y desinfectan la piel de tus piernas</li>
+							<li>aceleran la curación de microfracturas</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-			<div class="slide">
-				<div class="slide__pic slide__pic--5"></div>
-				<div class="slide__txt">
-					<p>Cafeína, miel y  Gingko biloba</p>
-					<ul>
-						<li>cuidan la piel y la tonifican</li>
-						<li>estimulan el flujo sanguíneo</li>
-						<li>estimulan el metabolismo de los tejidos aceleran la renovación</li>
-						<li>de las células microfracturas</li>
-					</ul>
+			<div class="sl sl--card">
+				<div class="sl__card">
+					<div class="sl__icon sl__icon--honey"></div>
+					<div class="sl__txt">
+						<h3>Cafeína, miel y  Gingko biloba</h3>
+						<ul>
+							<li>cuidan la piel y la tonifican</li>
+							<li>estimulan el flujo sanguíneo</li>
+							<li>estimulan el metabolismo de los tejidos aceleran la renovación</li>
+							<li>de las células microfracturas</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="arrow-prev">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 404.3 404.3"><polygon points="289.9 18 265.9 0 114.3 202.1 265.9 404.3 289.9 386.3 151.8 202.1 "/></svg>
+		<div class="slider__arrow slider__arrow--prev">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.6 404.3"><polygon points="175.6 18 151.6 0 0 202.1 151.6 404.3 175.6 386.3 37.5 202.1 "/></svg>
 		</div>
-		<div class="arrow-next">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 404.3 404.3"><polygon points="138.3 0 114.3 18 252.4 202.1 114.3 386.3 138.3 404.3 289.9 202.1 "/></svg>
+		<div class="slider__arrow slider__arrow--next">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.6 404.3"><polygon points="24 0 0 18 138.1 202.1 0 386.3 24 404.3 175.6 202.1 "/></svg>
 		</div>
 	</div>
 	<!-- end slider -->
 
+	<!-- begin color-box -->
+	<div class="color-box">
+		<div class="color-box__bg color-box__bg--legs"></div>
+		<div class="color-box__left">
+			<p class="color-box__txt">¡LA APLICACIÓN REGULAR DE LA CREMA VARIKOSETTE<br>durante varias semanas permite reducir visiblemente los signos de las varices!</p>
+			<div class="color-box__space"></div>
+		</div>
+		<div class="color-box__right">
+			<div class="color-box__space"></div>
+			<p class="color-box__txt">100% efecto curativo<br>Este producto ha pasado las pruebas clínicas y las certificaciones necesarias en nuestro país.<br>¡Mejoras reales después de usarla solo durante 1 semana y media! ¿Quieres probarla?</p>
+		</div>
+	</div>
+	<!-- end color-box -->
+
+	<a href="#" class="ask-btn">Pidela ahora</a>
 
 </section>
 <!-- end consist -->
+
+
+<!-- begin results -->
+<section class="results">
+
+	<div class="banner">
+		<p class="banner__txt">¡La efectividad de la crema Vary Forte ha sido probada y confirmada por miles de comentarios positivos procedentes de todo el mundo!</p>
+	</div>
+
+	<!-- begin slider -->
+	<div class="slider slick-carousel">
+		<div class="slider__items">
+			<div class="sl">
+				<div class="sl__photo sl__photo--1"></div>
+				<p class="sl__txt sl__txt--user">Julia, 46 años</p>
+				<div class="sl__sep sl__sep--long"></div>
+				<p class="sl__txt sl__txt--comment">La crema Varikosette me ha salvado la vida literalmente. Un par de semanas después de empezar a usarla, noté una reducción significativa de mis varices. He recuperado la normalidad en mis piernas. Me siento más ligera y llena de energía</p>
+				<div class="sl__sep"></div>
+			</div>
+			<div class="sl">
+				<div class="sl__photo sl__photo--2"></div>
+				<p class="sl__txt sl__txt--user">Nico, 45 años</p>
+				<div class="sl__sep sl__sep--long"></div>
+				<p class="sl__txt sl__txt--comment">Después de trabajar, siempre me echo la crema Vary Forte. Elimina rápidamente la hinchazón y el cansancio, y la hiperhidrosis de mis pies también ha disminuido considerablemente. Por las mañanas me siento las piernas completamente descansadas. ¡Se la recomiendo a todo el mundo!</p>
+				<div class="sl__sep"></div>
+			</div>
+			<div class="sl">
+				<div class="sl__photo sl__photo--3"></div>
+				<p class="sl__txt sl__txt--user">María, 35 años</p>
+				<div class="sl__sep sl__sep--long"></div>
+				<p class="sl__txt sl__txt--comment">La crema elimina de manera efectiva las arañas vasculares de las piernas. Después de su uso, se nota una mejoría significativa. El dolor leve y la sensación de tirantez desaparecen</p>
+				<div class="sl__sep"></div>
+			</div>
+		</div>
+		<div class="slider__arrow slider__arrow--prev">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.6 404.3"><polygon points="175.6 18 151.6 0 0 202.1 151.6 404.3 175.6 386.3 37.5 202.1 "/></svg>
+		</div>
+		<div class="slider__arrow slider__arrow--next">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.6 404.3"><polygon points="24 0 0 18 138.1 202.1 0 386.3 24 404.3 175.6 202.1 "/></svg>
+		</div>
+	</div>
+	<!-- end slider -->
+
+</section>
+<!-- end results -->
+
+
+<!-- begin expert -->
+<div class="expert">
+
+	<div class="banner">
+		<p class="banner__txt">La opinión del especialista</p>
+	</div>
+
+	<!-- begin color-box -->
+	<div class="color-box">
+		<div class="color-box__bg color-box__bg--doc"></div>
+		<div class="color-box__left">
+			<p class="color-box__txt">¡LA APLICACIÓN REGULAR DE LA CREMA VARIKOSETTE<br>durante varias semanas permite reducir visiblemente los signos de las varices!</p>
+			<div class="color-box__space"></div>
+		</div>
+		<div class="color-box__right">
+			<div class="color-box__space"></div>
+			<p class="color-box__txt">100% efecto curativo<br>Este producto ha pasado las pruebas clínicas y las certificaciones necesarias en nuestro país.<br>¡Mejoras reales después de usarla solo durante 1 semana y media! ¿Quieres probarla?</p>
+		</div>
+	</div>
+	<!-- end color-box -->
+
+</div>
+<!-- end expert -->
+
 
 {% endblock %}
