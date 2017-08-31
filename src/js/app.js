@@ -6,13 +6,21 @@ import 'slick-carousel';
 var WebFont = require('webfontloader');
 WebFont.load({
 	google: {
-		families: ['Acme:400', 'Catamaran:700']
+		families: ['Acme:400', 'Catamaran:400,700']
 	}
 });
 // WEB FONT LOADER end
 
 
 $(document).ready(function () {
+
+	// SMOOTH SCROLL begin
+	$(document).on('click', 'a.ask-btn', function(event){
+		event.preventDefault();
+
+		$("html, body").animate({ scrollTop: $('#order-form').offset().top - ($(window).height()-$("#order-form").outerHeight() +10)}, 500);
+	});
+	// SMOOTH SCROLL end
 
 	// --- slick.js initialization begin ---
 	$('.slick-carousel').each(function (idx, item) {
@@ -27,32 +35,8 @@ $(document).ready(function () {
 			adaptiveHeight: true,
 			infinite: true,
 			speed: 300,
-			slidesToShow: 4,
+			slidesToShow: 1,
 			slidesToScroll: 1,
-			responsive: [
-				{
-					breakpoint: 1024,
-					settings: {
-						slidesToShow: 3,
-						slidesToScroll: 1,
-						infinite: true,
-					}
-				},
-				{
-					breakpoint: 600,
-					settings: {
-						slidesToShow: 2,
-						slidesToScroll: 1
-					}
-				},
-				{
-					breakpoint: 480,
-					settings: {
-						slidesToShow: 1,
-						slidesToScroll: 1
-					}
-				}
-			]
 	    });
 	});
 	// --- slick.js initialization end ---

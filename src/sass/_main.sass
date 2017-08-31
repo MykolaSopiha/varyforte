@@ -1,5 +1,5 @@
 .header
-	background: url('../img/bg.jpg') center center no-repeat
+	background: url('../img/bg-header.jpg') center top no-repeat
 	background-size: cover
 	padding-top: 20px
 	padding-bottom: 50px
@@ -108,7 +108,10 @@
 
 .slider
 	position: relative
+	max-width: 720px
 	margin-bottom: 10px
+	margin-right: auto
+	margin-left: auto
 	&__arrow
 		position: absolute
 		top: 50%
@@ -147,6 +150,8 @@
 	&--card
 		padding: 128px 45px 0px 45px
 	&__card
+		margin: 0 auto
+		max-width: 380px
 		position: relative
 		padding-top: 120px
 		border: 6px solid #455939
@@ -187,7 +192,7 @@
 		&--3
 			background-position: -379px -459px
 	&__txt
-		padding: 0 60px
+		padding: 10px 20px
 		color: #334329
 		font-family: "Catamaran", sans-serif
 		font-size: 30px
@@ -195,20 +200,23 @@
 		text-align: center
 		&--user
 			color: #eb8106
-			font-family: "Acme"
+			font-family: "Acme", sans-serif
 			font-size: 28px
 		&--comment
+			margin-right: auto
+			margin-left: auto
+			max-width: 380px
 			color: #333
-			font-family: "Catamaran"
+			font-family: "Catamaran", sans-serif
 			font-size: 18px
 			font-weight: bold
 		h3
 			color: #eb8105
-			font-family: "Acme"
+			font-family: "Acme", sans-serif
 			font-size: 36px
 		li
 			color: #465939
-			font-family: "Catamaran"
+			font-family: "Catamaran", sans-serif
 			font-size: 24px
 			font-weight: bold
 			text-align: left
@@ -238,52 +246,215 @@
 .consist
 	padding-top: 50px
 	padding-bottom: 75px
+
+.consist, .how-to-buy
 	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpGMDYwMUVDQkE4OENFNzExOEE3RkQ1MEU2QzYxRTNCMCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo3NkU1NkZBQzhEOTMxMUU3ODc3QkEyNkI5QjE4MTRERSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo3NkU1NkZBQjhEOTMxMUU3ODc3QkEyNkI5QjE4MTRERSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjg2Qjk3QzkxODE4REU3MTFCMzYyOTI2NzU2MTM5MEEwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkYwNjAxRUNCQTg4Q0U3MTE4QTdGRDUwRTZDNjFFM0IwIi8+IDwvcmRmOkRlc2NyaXB0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')
 	background-repeat: repeat
+
+.expert
+	background: #fff
 
 .color-box
 	position: relative
 	margin-top: 60px
+	margin-right: auto
 	margin-bottom: 60px
+	margin-left: auto
+	max-width: 414px
 	display: flex
 	flex-wrap: wrap
 	flex-direction: column
 	overflow: hidden
 	&__bg
 		position: absolute
-		top: 0
 		left: 50%
 		z-index: 1
 		transform: translateX(-50%)
+		background: none
 		&--legs
+			top: 0
 			background: url('../img/img.png') no-repeat -31px -1907px
 			width: 215px
 			height: 475px
 		&--doc
+			bottom: 0
 			background: url('../img/img.png') no-repeat -264px -702px
-			width: 412px
+			width: 100%
+			max-width: 412px
 			height: 561px
 	&__left, &__right
 		display: flex
+		position: relative
 		z-index: 2
 		background: inherit
 	&__left
 		p
+			text-align: left
 			background-color: rgba(118, 65, 3, .7)
 	&__right
 		p
+			text-align: right
 			background-color: rgba(62, 89, 44, .7)
 	&__txt
 		width: 80%
 		padding: 20px
 		color: #fff
-		font-family: "Catamaran"
+		font-family: "Catamaran", sans-serif
 		font-size: 24px
 		font-weight: bold
 		line-height: 1.2em
 	&__space
 		flex-grow: 1
 		background: inherit
+		&--white
+			background: white
 
-.expert
-	background: #fff
+.ill
+	&__header
+		display: flex
+		flex-direction: row
+		opacity: .8
+		background-color: #455939
+		div
+			padding: 10px
+			flex-basis: 50%
+			font-size: 0
+			svg
+				float: right
+				max-width: 165px
+		p
+			padding: 0 10px
+			flex-basis: 50%
+			max-width: 200px
+			align-self: center
+			color: #fbf39d
+			font-family: "Acme", sans-serif
+			font-size: 36px
+	&__txt
+		padding: 20px
+		color: #6b7961
+		font-family: "Catamaran", sans-serif
+		font-size: 20px
+		font-weight: bold
+		text-align: center
+		p
+			margin: 0 auto
+			max-width: 374px
+			padding: 20px
+			border: 3px solid rgba(69, 89, 57, 0.8)
+			border-radius: 10px
+
+.how-to-buy
+	padding-bottom: 60px
+
+.step
+	&__1
+		margin: 30px auto
+		padding: 12px 15px
+		max-width: 288px
+		border-radius: 10px
+		background-clip: padding-box
+		background-color: rgba(37, 181, 209, 0.8)
+	&__2
+		margin: 30px auto
+		padding: 12px 15px
+		max-width: 288px
+		border-radius: 10px
+		background-clip: padding-box
+		background-color: rgba(101, 45, 87, 0.8)
+	&__3
+		margin: 30px auto
+		padding: 12px 15px
+		max-width: 288px
+		border-radius: 10px
+		background-clip: padding-box
+		background-color: rgba(241, 107, 79, 0.8)
+	&__pic
+		margin: 0 auto
+		width: 150px
+		font-size: 0
+	&__txt
+		color: #fff
+		font-family: "Catamaran", sans-serif
+		font-size: 20px
+		font-weight: bold
+		text-align: center
+		line-height: 1.2em
+	&__arr-down
+		margin: 0 auto
+		width: 73px
+
+.order
+	padding-top: 60px
+	background: url('../img/bg-footer.jpg') center bottom no-repeat
+	background-size: cover
+
+.price
+	margin: 20px auto
+	max-width: 280px
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+	align-items: center
+	font-family: "Acme", sans-serif
+	&__old
+		color: #a9a9a9
+		font-size: 36px
+	&__new
+		color: #ee6303
+		font-size: 78px
+
+.order-form
+	display: flex
+	flex-direction: column
+	margin: 0 auto
+	max-width: 300px
+	input
+		margin-bottom: 12px
+		height: 80px
+		background: none
+		border: none
+		border: 6px solid #fcf49e
+		border-radius: 14px
+		color: #fbf39d
+		font-family: "Acme", sans-serif
+		font-size: 36px
+		&::-webkit-input-placeholder
+			color: #fbf39d
+		&::-moz-placeholder /* Firefox 19+ */
+			color: #fbf39d
+		&:-moz-placeholder /* Firefox 18- */
+			color: #fbf39d
+		&:-ms-input-placeholder
+			color: #fbf39d
+	input[type="text"]
+		padding: 0 15px
+	input[type="submit"]
+		margin-top: 23px
+		background-color: #fcf49e
+		color: #34442a
+		font-size: 48px
+
+.footer
+	padding-top: 18px
+	padding-bottom: 50px
+	background-color: #202a1a
+	text-align: center
+
+.doc-links
+	a
+		margin: 18px
+		color: #fff
+		font-family: "Catamaran", sans-serif
+		font-size: 20px
+		text-decoration: none
+		+r(1024)
+			display: block
+			margin-top: 36px
+			margin-bottom: 36px
+
+.copyright
+	margin-top: 80px
+	color: #878c84
+	font-family: "Catamaran", sans-serif
+	font-size: 20px
