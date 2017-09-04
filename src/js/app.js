@@ -32,7 +32,7 @@ $(document).ready(function () {
 	    $(this).find('.slider__items').slick({
 			prevArrow: $(this).find('.slider__arrow--prev'),
 			nextArrow: $(this).find('.slider__arrow--next'),
-			adaptiveHeight: true,
+			adaptiveHeight: false,
 			infinite: true,
 			speed: 300,
 			slidesToShow: 1,
