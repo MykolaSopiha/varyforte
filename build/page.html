@@ -16,23 +16,29 @@
     <div class="out">
       <!-- begin header -->
       <header class="header" role="banner">
-        <div class="pics">
-          <div class="pics__product">
-            <div class="varyforte"> </div>
+        <!-- begin header__inner -->
+        <div class="header-inner">
+          <div class="pics">
+            <div class="pics__product">
+              <div class="varyforte"> </div>
+            </div>
+            <div class="pics__signs">
+              <div class="guarantee"></div>
+              <div class="natural"></div>
+            </div>
           </div>
-          <div class="pics__signs">
-            <div class="guarantee"></div>
-            <div class="natural"></div>
-          </div>
+          <form class="order-form order-form--green order-form--desktop" action="api.php" method="post">
+            <p class="price price--green"> <span class="price__old">78 €</span> <span class="price__new">39 €</span> </p> <input type="text" name="name" placeholder="nombre" required> <input type="text" name="phone" placeholder="teléfono" required> <input type="submit" value="Pidela ahora">            </form>
         </div>
+        <!-- end header__inner -->
         <div class="banner">
           <p class="banner__txt banner__txt--big">Fórmula exclusiva</p>
           <p class="banner__txt">Para la salud y belleza de tus piernas</p>
           <p class="banner__txt banner__txt--big">¡ADIÓS VARICES!</p>
-        </div> <a href="#order-form" class="ask-btn">Pidela ahora</a> </header>
+        </div> <a href="#order-form" class="ask-btn ask-btn--mobile">Pidela ahora</a> </header>
       <!-- end header -->
       <!-- begin decsription -->
-      <section class="decsription">
+      <div class="description">
         <div class="banner">
           <p class="banner__txt">¡Salud y ligereza en las piernas con la crema Varyforte!</p>
         </div>
@@ -63,10 +69,10 @@
         <div class="banner">
           <p class="banner__txt banner__txt--big-desc">El poder de la crema "Vary Forte" está en su composición exclusiva, que se ha consolidado como la más necesaria para el tratamiento efectivo de las varices. Además, aporta belleza y salud a la piel de las piernas.</p>
         </div>
-      </section>
+      </div>
       <!-- end decsription -->
       <!-- begin consist -->
-      <section class="consist">
+      <div class="consist">
         <!-- begin slider -->
         <div class="slider slick-carousel">
           <div class="slider__items">
@@ -143,28 +149,16 @@
           <div class="slider__arrow slider__arrow--next"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.6 404.3"><polygon points="24 0 0 18 138.1 202.1 0 386.3 24 404.3 175.6 202.1 "/></svg> </div>
         </div>
         <!-- end slider -->
-        <!-- begin color-box -->
-        <div class="color-box">
-          <div class="color-box__bg color-box__bg--legs"></div>
-          <div class="color-box__left">
-            <p class="color-box__txt">¡LA APLICACIÓN REGULAR DE LA CREMA VARIKOSETTE<br>durante varias semanas permite reducir visiblemente los signos de las varices!</p>
-            <div class="color-box__space"></div>
-          </div>
-          <div class="color-box__right">
-            <div class="color-box__space"></div>
-            <p class="color-box__txt">100% efecto curativo<br>Este producto ha pasado las pruebas clínicas y las certificaciones necesarias en nuestro país.<br>¡Mejoras reales después de usarla solo durante 1 semana y media! ¿Quieres probarla?</p>
-          </div>
-        </div>
-        <!-- end color-box --><a href="#order-form" class="ask-btn">Pidela ahora</a> </section>
+      </div>
       <!-- end consist -->
       <!-- begin results -->
-      <section class="results">
+      <div class="results">
         <div class="banner">
           <p class="banner__txt">¡La efectividad de la crema Vary Forte ha sido probada y confirmada por miles de comentarios positivos procedentes de todo el mundo!</p>
         </div>
         <!-- begin slider -->
         <div class="slider slick-carousel">
-          <div class="slider__items">
+          <div class="slider__items" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
             <div class="sl">
               <div class="sl__photo sl__photo--2"></div>
               <p class="sl__txt sl__txt--user">Nico, 45 años</p>
@@ -192,33 +186,50 @@
           <div class="slider__arrow slider__arrow--next"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.6 404.3"><polygon points="24 0 0 18 138.1 202.1 0 386.3 24 404.3 175.6 202.1 "/></svg> </div>
         </div>
         <!-- end slider -->
-      </section>
+      </div>
       <!-- end results -->
       <!-- begin expert -->
-      <section class="expert">
+      <div class="expert">
         <div class="banner">
           <p class="banner__txt">La opinión del especialista</p>
         </div>
-        <!-- begin color-box -->
-        <div class="color-box">
-          <div class="color-box__bg color-box__bg--doc"></div>
-          <div class="color-box__left">
-            <p class="color-box__txt">Un número elevado de mujeres (y algunos hombres también) conoce muy bien lo que es sentir pesadez y dolor en las piernas. Muy a menudo, acuden al especialista solo cuando la enfermedad ya está avanzada y existen signos visibles de varices.
-              Como cualquier otro médico, creo que el mejor tratamiento para cualquier enfermedad es su prevención.</p>
-            <div class="color-box__space color-box__space--white"></div>
+        <!-- begin expert_content -->
+        <div class="expert__content">
+          <!-- begin color-box -->
+          <div class="color-box">
+            <div class="color-box__bg color-box__bg--legs"></div>
+            <div class="color-box__left">
+              <p class="color-box__txt">¡LA APLICACIÓN REGULAR DE LA CREMA VARIKOSETTE<br>durante varias semanas permite reducir visiblemente los signos de las varices!</p>
+              <div class="color-box__space"></div>
+            </div>
+            <div class="color-box__right">
+              <div class="color-box__space"></div>
+              <p class="color-box__txt">100% efecto curativo<br>Este producto ha pasado las pruebas clínicas y las certificaciones necesarias en nuestro país.<br>¡Mejoras reales después de usarla solo durante 1 semana y media! ¿Quieres probarla?</p>
+            </div>
           </div>
-          <div class="color-box__right">
-            <div class="color-box__space color-box__space--white"></div>
-            <p class="color-box__txt">Por eso, siempre recomiendo la crema Vary Forte a mis pacientes. Hace un trabajo espectacular las varices y es capaz de prevenir el desarrollo de la enfermedad. La crema Vary Forte acaba rápida y fácilmente con la sensación de "piernas cansadas",
-              y además aporta ligereza y fuerza tras un largo día de trabajo.</p>
+          <!-- end color-box -->
+          <!-- begin color-box -->
+          <div class="color-box">
+            <div class="color-box__bg color-box__bg--doc"></div>
+            <div class="color-box__left">
+              <p class="color-box__txt">Un número elevado de mujeres (y algunos hombres también) conoce muy bien lo que es sentir pesadez y dolor en las piernas. Muy a menudo, acuden al especialista solo cuando la enfermedad ya está avanzada y existen signos visibles de varices.
+                Como cualquier otro médico, creo que el mejor tratamiento para cualquier enfermedad es su prevención.</p>
+              <div class="color-box__space color-box__space--white"></div>
+            </div>
+            <div class="color-box__right">
+              <div class="color-box__space color-box__space--white"></div>
+              <p class="color-box__txt">Por eso, siempre recomiendo la crema Vary Forte a mis pacientes. Hace un trabajo espectacular las varices y es capaz de prevenir el desarrollo de la enfermedad. La crema Vary Forte acaba rápida y fácilmente con la sensación de "piernas cansadas",
+                y además aporta ligereza y fuerza tras un largo día de trabajo.</p>
+            </div>
           </div>
+          <!-- end color-box -->
         </div>
-        <!-- end color-box -->
-      </section>
+        <!-- end expert_content --><a href="#order-form" class="ask-btn">Pidela ahora</a> </div>
       <!-- end expert -->
       <!-- begin condition-of-use -->
-      <section class="condition-of-use">
-        <div class="ill">
+      <div class="condition-of-use">
+        <!-- begin ill -->
+        <div class="illustrations">
           <header class="ill__header">
             <div> <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 512 512" xml:space="preserve"><style>.s0{stop-color:#FFB533;}.s1{stop-color:#FFFF33;}.s2{fill:#CC7B29;}.s3{fill:#805540;}.s4{fill:#806040;}</style><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-29.9" y1="613.3" x2="-29.9" y2="643.3" gradientTransform="matrix(16 0 0 -16 735 10309)"><stop offset="0" stop-color="#FFB533"/><stop offset="1" stop-color="#FFFF33"/></linearGradient><circle cx="256" cy="256" r="240" fill="url(#SVGID_1_)"/><path id="SVGCleanerId_0" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256c141.4 0 256-114.6 256-256C512 114.6 397.4 0 256 0zM414.4 414.4c-40.6 40.6-96.5 65.6-158.4 65.6 -61.9 0-117.8-25.1-158.4-65.6C57 373.8 32 317.9 32 256S57 138.2 97.6 97.6C138.2 57 194.1 32 256 32s117.8 25 158.4 65.6c40.6 40.6 65.6 96.5 65.6 158.4C480 317.9 454.9 373.8 414.4 414.4z" fill="#CC7B29"/><polygon points="100.7 155.3 153.4 208 100.7 260.7 123.3 283.3 198.6 208 123.3 132.7 " fill="#805540"/><polygon points="388.7 132.7 313.4 208 388.7 283.3 411.3 260.7 358.6 208 411.3 155.3 " fill="#805540"/><polygon points="155.3 411.3 208 358.6 256 406.6 304 358.6 356.7 411.3 379.3 388.7 304 313.4 256 361.4 208 313.4 132.7 388.7 " fill="#806040"/><linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-29.9" y1="613.3" x2="-29.9" y2="643.3" gradientTransform="matrix(16 0 0 -16 735 10309)"><stop offset="0" stop-color="#FFB533"/><stop offset="1" stop-color="#FFFF33"/></linearGradient><circle cx="256" cy="256" r="240" fill="url(#SVGID_2_)"/><linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-29.9" y1="634.3" x2="-29.9" y2="642.3" gradientTransform="matrix(16 0 0 -16 735 10309)"><stop offset="0" style="stop-color:#FAFBFB;stop-opacity:0"/><stop offset="1" stop-color="#FAFBFB"/></linearGradient><path d="M256 32c-61.9 0-117.8 27.4-158.4 68C80.8 116.7 66.9 144 56.1 160h399.8c-10.8-16-24.7-43.2-41.5-60C373.8 59.4 317.9 32 256 32z" fill="url(#SVGID_3_)"/><path id="SVGCleanerId_0_1_" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256c141.4 0 256-114.6 256-256C512 114.6 397.4 0 256 0zM414.4 414.4c-40.6 40.6-96.5 65.6-158.4 65.6 -61.9 0-117.8-25.1-158.4-65.6C57 373.8 32 317.9 32 256S57 138.2 97.6 97.6C138.2 57 194.1 32 256 32s117.8 25 158.4 65.6c40.6 40.6 65.6 96.5 65.6 158.4C480 317.9 454.9 373.8 414.4 414.4z" fill="#CC7B29"/><polygon points="100.7 155.3 153.4 208 100.7 260.7 123.3 283.3 198.6 208 123.3 132.7 " fill="#805540"/><polygon points="388.7 132.7 313.4 208 388.7 283.3 411.3 260.7 358.6 208 411.3 155.3 " fill="#805540"/><polygon points="155.3 411.3 208 358.6 256 406.6 304 358.6 356.7 411.3 379.3 388.7 304 313.4 256 361.4 208 313.4 132.7 388.7 " fill="#806040"/></svg>              </div>
             <p>¿Y no es doloroso?</p>
@@ -226,8 +237,6 @@
           <div class="ill__txt">
             <p>Todos los componentes de la crema Vary Forte son naturales. No contiene parabenos, colorantes, perfumes sintéticos ni productos genéticamente modificados. Se trata de un producto certificado y no tiene contraindicaciones.</p>
           </div>
-        </div>
-        <div class="ill">
           <header class="ill__header">
             <div> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 58"><style>.a{fill:#36495E;}</style><polygon points="46.5 4 46.5 8 39.5 8 39.5 4 15.5 4 15.5 8 8.5 8 8.5 4 0.5 4 0.5 15 54.5 15 54.5 4 " fill="#F05565"/><polygon points="8.5 15 0.5 15 0.5 58 54.5 58 54.5 15 46.5 15 39.5 15 15.5 15 " fill="#EFEBDE"/><path d="M37.5 22h-2 -7 -2 -7 -2 -9v9 2 7 2 9h9 2 7 2 7 2 9v-9 -2 -7 -2 -9H37.5zM28.5 24h7v7h-7V24zM35.5 40h-7v-7h7V40zM19.5 33h7v7h-7V33zM19.5 24h7v7h-7V24zM10.5 24h7v7h-7V24zM10.5 33h7v7h-7V33zM17.5 49h-7v-7h7V49zM26.5 49h-7v-7h7V49zM35.5 49h-7v-7h7V49zM44.5 49h-7v-7h7V49zM44.5 40h-7v-7h7V40zM37.5 31v-7h7v7H37.5z" fill="#D5D0BB"/><rect x="8.5" width="7" height="8" class="a"/><rect x="39.5" width="7" height="8" class="a"/><rect x="19.5" y="33" width="7" height="7" fill="#7F6E5D"/><circle cx="46.5" cy="47" r="11" fill="#76C9B0"/><path d="M52.5 46h-5v-5c0-0.6-0.4-1-1-1s-1 0.4-1 1v6c0 0.6 0.4 1 1 1h6c0.6 0 1-0.4 1-1S53.1 46 52.5 46z" fill="#FFF"/></svg>              </div>
             <p>El curso del tratamiento</p>
@@ -235,8 +244,6 @@
           <div class="ill__txt">
             <p>La duración y la efectividad del curso del tratamiento es individual y depende directamente de la fase de la enfermedad. Para empezar a apreciar los resultados, será necesario seguir el tratamiento durante 10-15 días.</p>
           </div>
-        </div>
-        <div class="ill">
           <header class="ill__header">
             <div> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><style>.a{fill:#5B5D6E;}.b{fill:#C7CFE2;}</style><path d="M494.3 114.8c-4.9 0-8.8 3.9-8.8 8.8v70.6h-35.3v-76.1c0-4.9-3.9-8.8-8.8-8.8s-8.8 3.9-8.8 8.8v76.1h-37.3v-82.4c0-4.9-3.9-8.8-8.8-8.8s-8.8 3.9-8.8 8.8v82.4h-37.7v-89.7c0-4.9-3.9-8.8-8.8-8.8s-8.8 3.9-8.8 8.8v89.8h-35.7l-4-97c-0.2-4.9-4.6-8.6-9.2-8.5 -4.9 0.2-8.7 4.3-8.5 9.2l4 96.3h-37.2L218 87.6c-0.6-4.8-5-8.2-9.9-7.6 -4.8 0.6-8.3 5-7.6 9.9l13.3 104.4h-41.3L148 80.5c-1-4.8-5.7-7.8-10.5-6.8 -4.8 1-7.8 5.7-6.8 10.5l23.7 110h-41.4L64.5 34c-2.8-9.4-10.6-16.4-20.2-18.3l-33.8-6.7c-4.8-1-9.4 2.1-10.4 6.9 -1 4.8 2.1 9.4 6.9 10.4l33.8 6.8c3.2 0.6 5.8 3 6.7 6.1l84.1 277.7 -46 85.5c-4.5 8.3-4.2 18.1 0.6 26.1 4.8 8.1 13.3 12.9 22.7 12.9h367.7c4.9 0 8.8-3.9 8.8-8.8s-3.9-8.8-8.8-8.8H109c-4.5 0-6.8-3-7.6-4.3 -0.8-1.3-2.3-4.7-0.2-8.7l45.5-84.5 331.9-24.9c13.7-1 24.5-12.6 24.5-26.4V123.6C503.2 118.7 499.2 114.8 494.3 114.8zM147.6 308.5l-29.3-96.6h39.8l20.3 94.3L147.6 308.5zM196.3 304.8l-20-92.9h39.8l11.5 90.6L196.3 304.8zM245.2 301.2l-11.3-89.3h35.7l3.6 87.2L245.2 301.2zM322.2 295.4l-31.4 2.4 -3.6-85.9h35V295.4zM377.6 291.2l-37.7 2.8v-82.2h37.7V291.2zM432.6 287.1l-37.3 2.8v-78h37.3V287.1zM485.5 274.9c0 4.6-3.6 8.5-8.2 8.8l-27.1 2v-73.9h35.3V274.9z" fill="#A2AAC2"/><circle cx="132.4" cy="476.7" r="26.5" class="a"/><circle cx="450.2" cy="476.7" r="26.5" class="a"/><path d="M132.4 485.5L132.4 485.5c-5.1 0-9.6-3.6-10.6-8.7l-7.1-35.5h35.3l-7.1 35.5C142 481.9 137.5 485.5 132.4 485.5z" class="b"/><path d="M450.2 485.5L450.2 485.5c-5.1 0-9.6-3.6-10.6-8.7l-7.1-35.5h35.3l-7.1 35.5C459.8 481.9 455.3 485.5 450.2 485.5z" class="b"/><path d="M504.2 114.8L73 62l5.6 18.5 423.6 51.9c0.4 0.1 0.7 0.1 1.1 0.1 4.4 0 8.2-3.3 8.8-7.8C512.5 119.8 509.1 115.4 504.2 114.8z" fill="#959CB3"/></svg>              </div>
             <p>Dónde comprarla</p>
@@ -245,10 +252,11 @@
             <p>En España, el único distribuidor oficial de la crema Varikosette es nuestra empresa. ¡Compra solo productos Vary Forte originales!</p>
           </div>
         </div>
-      </section>
+        <!-- end ill -->
+      </div>
       <!-- end condition-of-use -->
       <!-- begin how-to-buy -->
-      <section class="how-to-buy">
+      <div class="how-to-buy">
         <div class="banner">
           <p class="banner__txt">Cómo pedir la crema Vary Forte</p>
         </div>
@@ -276,24 +284,26 @@
           </div>
         </div>
         <!-- end step -->
-      </section>
+      </div>
       <!-- end how-to-buy -->
       <!-- begin order -->
-      <section class="order">
-        <div class="pics">
-          <div class="pics__product">
-            <div class="varyforte"> </div>
+      <div class="order" id="order-form">
+        <div class="order-inner">
+          <div class="pics">
+            <div class="pics__product">
+              <div class="varyforte"> </div>
+            </div>
+            <div class="pics__signs">
+              <div class="guarantee"></div>
+              <div class="natural"></div>
+            </div>
           </div>
-          <div class="pics__signs">
-            <div class="guarantee"></div>
-            <div class="natural"></div>
+          <div>
+            <p class="price price--green"> <span class="price__old">78 €</span> <span class="price__new">39 €</span> </p>
+            <form class="order-form order-form--green" action="api.php" method="post"> <input type="text" name="name" placeholder="nombre" required> <input type="text" name="phone" placeholder="teléfono" required> <input type="submit" value="Pidela ahora"> </form>
           </div>
         </div>
-        <div class="banner" id="order-form">
-          <p class="price"> <span class="price__old">78 €</span> <span class="price__new">39 €</span> </p>
-          <form class="order-form" action="api.php" method="post"> <input type="text" name="name" placeholder="nombre" required> <input type="text" name="phone" placeholder="teléfono" required> <input type="submit" value="Pidela ahora"> </form>
-        </div>
-      </section>
+      </div>
       <!-- end order -->
       <!-- begin footer -->
       <footer class="footer" role="contentinfo">
